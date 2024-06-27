@@ -1,7 +1,11 @@
-a = 3
-b= 4
-print(a+b)
-# ithellam oru problem ah?
-print(a*b)
-#ithu epdi??
-# not even close
+#importing the libraries
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#importing the dataset
+
+df = pd.read_csv('spam.csv', encoding= 'Latin-1')
+df = df.dropna(how= 'any', axis=1)
+print(df.head())
