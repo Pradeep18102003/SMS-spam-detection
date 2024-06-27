@@ -8,4 +8,5 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('spam.csv', encoding= 'Latin-1')
 df = df.dropna(how= 'any', axis=1)
+df.columns = ['target', 'message']
 print(df.head())
